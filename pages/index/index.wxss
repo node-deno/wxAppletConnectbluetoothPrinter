@@ -1,0 +1,30 @@
+/* pages/home/home.wxss */
+.bluetooth_devices_list {
+  height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  /* border: 1px solid rgba(100, 100, 100,0.5); */
+  border-radius: 5px;
+  width: auto;
+}
+
+.item {
+  display: block;
+  /* font-family:  Arial, Helvetica, sans-serif;
+   font-size:14px;
+   margin: 0 10px;
+   margin-top:10px;
+   margin-bottom: 10px;
+   background-color:#FFA850; 
+   border-radius: 5px;
+   border-bottom: 2px solid #68BAEA; */
+  border-bottom: 1px solid #EEE;
+  padding: 4px;
+  color: #666;
+}
+
+.item_hover {
+  background-color: rgba(0, 0, 0, .1);
+}

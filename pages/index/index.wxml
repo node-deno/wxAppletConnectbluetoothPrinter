@@ -1,0 +1,11 @@
+<button style="margin-top: 20rpx;" plain type="warn" bindtap="searchBluetooth">搜索蓝牙</button>
+
+<scroll-view class="bluetooth_devices_list" scroll-y scroll-with-animation>
+  <view bindtap="tapBluetoothDevice" wx:for="{{bluetoothList}}" wx:key="index" data-device-id="{{item.deviceId}}" class="item" hover-class="item_hover">
+    <view style="font-size: 16px; color: #333;">{{item.name}}</view>
+    <view style="font-size: 16px; color: #333;">{{item.deviceId}}</view>
+    <view style="font-size: 10px">信号强度: {{item.RSSI}}dBm ({{utils.max(0, item.RSSI + 100)}}%)</view>
+  </view>
+</scroll-view>
+
+<button bindtap="writeDataToBluetooth" disabled="{{isLabelSending}}">写入数据</button>
